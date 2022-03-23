@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projetopadaria;
+package br.com.padaria.testes;
 
 /**
  *
  * @author Rafael
  */
-public class teste {
+public class TesteHelloWorld {
+    
+     public static void main(String[] args) {
+         System.out.println("hello world!");
+     }
     
 }
