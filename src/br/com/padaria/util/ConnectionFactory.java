@@ -11,9 +11,9 @@ package br.com.padaria.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import static jdk.nashorn.internal.objects.NativeError.printStackTrace;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -22,10 +22,10 @@ import static jdk.nashorn.internal.objects.NativeError.printStackTrace;
 public class ConnectionFactory {
 
     private static Connection connection;
-    private static final String URL_CONNECTION = "jdbc:mysql://localhost:5432/crud-javaswing";
-    private static final String USER = "postgres";
-    private static final String PASSWORD = "postgres";
-    private static final String DRIVER = "org.postgresql.Driver";
+    private static final String URL_CONNECTION = "jdbc:mysql://localhost:3306/padaria";
+    private static final String USER = "root";
+    private static final String PASSWORD = "root";
+    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection openConnection() {
 
@@ -39,8 +39,8 @@ public class ConnectionFactory {
                 System.out.println("Connection opened!");
 
             } catch (SQLException | ClassNotFoundException ex) {
-
-                printStackTrace(ex);
+            
+                Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
 
             }
 
@@ -61,8 +61,8 @@ public class ConnectionFactory {
                 System.out.println("Connection closed!");
 
             } catch (SQLException ex) {
-
-                printStackTrace(ex);
+                
+                Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
 
             }
 
