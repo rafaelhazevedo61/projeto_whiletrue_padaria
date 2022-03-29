@@ -15,6 +15,7 @@ public class Cliente {
     
     //variáveis
     private int id;
+    private String usuario;
     private String nome;
     private String senha;
     private String CPF;
@@ -28,8 +29,11 @@ public class Cliente {
 
     
     //construtoores
-    public Cliente(int id, String nome, String senha, String CPF, String RG, String sexo, Date nascimento, String email, String telefone, String CEP, String endereço) {
+    
+
+    public Cliente(int id, String usuario, String nome, String senha, String CPF, String RG, String sexo, Date nascimento, String email, String telefone, String CEP, String endereço) {
         this.id = id;
+        this.usuario = usuario;
         this.nome = nome;
         this.senha = senha;
         this.CPF = CPF;
@@ -42,9 +46,9 @@ public class Cliente {
         this.endereço = endereço;
     }
 
-    public Cliente(int id, String nome, String senha) {
+    public Cliente(int id, String usuario, String senha) {
         this.id = id;
-        this.nome = nome;
+        this.usuario = usuario;
         this.senha = senha;
     }
 
@@ -137,6 +141,14 @@ public class Cliente {
     public void setEndereço(String endereço) {
         this.endereço = endereço;
     }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
     
     
     
@@ -145,7 +157,7 @@ public class Cliente {
     //tostring
     @Override
     public String toString() {
-        return "Cliente{" + "id=" + id + ", nome=" + nome + ", senha=" + senha + ", CPF=" + CPF + ", RG=" + RG + ", sexo=" + sexo + ", nascimento=" + nascimento + ", email=" + email + ", telefone=" + telefone + ", CEP=" + CEP + ", endere\u00e7o=" + endereço + '}';
+        return "Cliente{" + "id=" + id + "usuario="+ usuario +", nome=" + nome + ", senha=" + senha + ", CPF=" + CPF + ", RG=" + RG + ", sexo=" + sexo + ", nascimento=" + nascimento + ", email=" + email + ", telefone=" + telefone + ", CEP=" + CEP + ", endere\u00e7o=" + endereço + '}';
     }
     
     

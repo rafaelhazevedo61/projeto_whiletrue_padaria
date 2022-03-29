@@ -15,6 +15,27 @@ public class Usuario {
     private String usuario;
     private String senha;
 
+    public Usuario() {
+    }
+
+    
+    
+    public Usuario(String usuario, String senha) {
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+
+    public Usuario(Long id) {
+        this.id = id;
+    }
+
+    public Usuario(Long id, String usuario, String senha) {
+        this.id = id;
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+    
+    
     public Long getId() {
         return id;
     }
