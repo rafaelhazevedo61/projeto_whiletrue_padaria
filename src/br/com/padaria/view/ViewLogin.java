@@ -52,7 +52,7 @@ public class ViewLogin extends javax.swing.JFrame {
         lbl_Senha.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         lbl_Senha.setText("Senha");
         getContentPane().add(lbl_Senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
-        getContentPane().add(tf_Senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 240, 30));
+        getContentPane().add(tf_Senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 240, 40));
 
         tf_usuário.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         tf_usuário.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +60,7 @@ public class ViewLogin extends javax.swing.JFrame {
                 tf_usuárioActionPerformed(evt);
             }
         });
-        getContentPane().add(tf_usuário, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 240, 30));
+        getContentPane().add(tf_usuário, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 240, 40));
 
         lbl_usuario.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         lbl_usuario.setText("Usuário");
@@ -73,20 +73,21 @@ public class ViewLogin extends javax.swing.JFrame {
                 btn_enviarActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 240, 30));
+        getContentPane().add(btn_enviar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 240, 30));
 
         btn_criar_conta.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         btn_criar_conta.setText("Criar Conta");
-        getContentPane().add(btn_criar_conta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 240, 30));
+        getContentPane().add(btn_criar_conta, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 240, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Ainda não tem uma conta?");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 170, 20));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 170, 20));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/padaria/imagens/VIEW_LOGIN_ofc.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tf_usuárioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_usuárioActionPerformed
