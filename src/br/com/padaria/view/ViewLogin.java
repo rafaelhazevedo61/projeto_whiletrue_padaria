@@ -4,6 +4,7 @@
  */
 package br.com.padaria.view;
 
+import br.com.padaria.controller.LoginController;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -13,18 +14,19 @@ import javax.swing.JToggleButton;
  *
  * @author W
  */
-public class View_Autenticar_Usuario extends javax.swing.JFrame {
-
+public class ViewLogin extends javax.swing.JFrame {
+    private LoginController controller;
     /**
      * Creates new form View_Autenticar_Usuario
      */
-    public View_Autenticar_Usuario() {
+    public ViewLogin() {
         initComponents();
+        iniciar();
         
     }
 
     private void iniciar(){
-        
+        controller = new LoginController(this);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -92,7 +94,7 @@ public class View_Autenticar_Usuario extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_usuárioActionPerformed
 
     private void btn_enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_enviarActionPerformed
-        // TODO add your handling code here:
+       controller.autenticaUsuario();
     }//GEN-LAST:event_btn_enviarActionPerformed
 
     /**
@@ -112,20 +114,21 @@ public class View_Autenticar_Usuario extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Autenticar_Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Autenticar_Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Autenticar_Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Autenticar_Usuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ViewLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View_Autenticar_Usuario().setVisible(true);
+                new ViewLogin().setVisible(true);
             }
         });
     }
