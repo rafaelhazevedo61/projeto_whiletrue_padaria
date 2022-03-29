@@ -16,7 +16,7 @@ public class TestesUsuarioDAO {
 
     public static void main(String[] args) {
 
-        Teste_verificaUsuario();
+        Teste_atualizaUsuarios();
         
     }
 
@@ -41,4 +41,33 @@ public class TestesUsuarioDAO {
 
     }
 
+    public static void Teste_insereUsuarios(){
+        String usuario1 = "teste02";
+        String senha = "teste02";
+        
+        Usuario usuario = new Usuario(usuario1, senha);
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarioDAO.insereUsuario(usuario);
+        
+    }
+    
+    public static void Teste_deletaUsuarios(){
+        Long id = 1L;
+        
+        Usuario usuario = new Usuario(id);
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarioDAO.deletaUsuario(usuario);
+    }
+    
+    public static void Teste_atualizaUsuarios(){
+        Long id = 4L;
+        
+        String usuario1 = "usuario teste 02";
+        String senha = "usuario teste 02";
+        Usuario usuario = new Usuario(id, usuario1, senha);
+        System.out.println(usuario);
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        usuarioDAO.atualizaUsuario(usuario);
+           
+    }
 }
