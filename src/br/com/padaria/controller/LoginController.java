@@ -2,7 +2,7 @@ package br.com.padaria.controller;
 
 import br.com.padaria.dao.UsuarioDAO;
 import br.com.padaria.modelo.Usuario;
-import br.com.padaria.view.MenuPrincipal;
+import br.com.padaria.view.ViewMenuPrincipal;
 import br.com.padaria.view.ViewLogin;
 import javax.swing.JOptionPane;
 
@@ -38,7 +38,7 @@ public class LoginController {
         
         if (existeUsuario != null) {
             
-            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            ViewMenuPrincipal menuPrincipal = new ViewMenuPrincipal();
             menuPrincipal.setVisible(true);
             view.dispose();
             

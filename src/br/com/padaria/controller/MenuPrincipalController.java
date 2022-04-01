@@ -5,7 +5,7 @@
  */
 package br.com.padaria.controller;
 
-import br.com.padaria.view.MenuPrincipal;
+import br.com.padaria.view.ViewMenuPrincipal;
 
 
 public class MenuPrincipalController {
