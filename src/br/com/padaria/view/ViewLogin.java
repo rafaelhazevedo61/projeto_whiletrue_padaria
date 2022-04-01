@@ -47,6 +47,9 @@ public class ViewLogin extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
+        setPreferredSize(new java.awt.Dimension(626, 422));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_Senha.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
@@ -87,6 +90,7 @@ public class ViewLogin extends javax.swing.JFrame {
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tf_usuárioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_usuárioActionPerformed

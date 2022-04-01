@@ -26,23 +26,51 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        imagem_view = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        btn_vendas = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jMenu1.setText("File");
+        imagem_view.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/padaria/imagens/Menuprinciapal_images.png"))); // NOI18N
+        getContentPane().add(imagem_view, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jMenuBar1.setBackground(new java.awt.Color(0, 0, 0));
+        jMenuBar1.setForeground(new java.awt.Color(255, 255, 255));
+
+        jMenu1.setText("Atendimento");
+
+        btn_vendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, 0));
+        btn_vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/padaria/imagens/icone_vendas.png"))); // NOI18N
+        btn_vendas.setText("Venda");
+        btn_vendas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_vendasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(btn_vendas);
+
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Estoque");
         jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Financeiro");
+        jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_vendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_vendasActionPerformed
+        System.out.println("ok");
+    }//GEN-LAST:event_btn_vendasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,8 +108,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem btn_vendas;
+    private javax.swing.JLabel imagem_view;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     // End of variables declaration//GEN-END:variables
 }
