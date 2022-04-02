@@ -6,11 +6,11 @@ import br.com.padaria.view.ViewMenuPrincipal;
 import br.com.padaria.view.ViewLogin;
 import javax.swing.JOptionPane;
 
-public class LoginController {
+public class ViewLoginController {
 
     private final ViewLogin view;
 
-    public LoginController(ViewLogin view) {
+    public ViewLoginController(ViewLogin view) {
         this.view = view;
     }
 

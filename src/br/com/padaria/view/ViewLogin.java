@@ -4,30 +4,22 @@
  */
 package br.com.padaria.view;
 
-import br.com.padaria.controller.LoginController;
+import br.com.padaria.controller.ViewLoginController;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.JToggleButton;
 
-/**
- *
- * @author W
- */
 public class ViewLogin extends javax.swing.JFrame {
-    private LoginController controller;
-    /**
-     * Creates new form View_Autenticar_Usuario
-     */
+    
+    private ViewLoginController controller;
+  
     public ViewLogin() {
         initComponents();
-        iniciar();
+        controller = new ViewLoginController(this);
         
     }
 
-    private void iniciar(){
-        controller = new LoginController(this);
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
