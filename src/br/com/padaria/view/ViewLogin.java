@@ -86,7 +86,7 @@ public class ViewLogin extends javax.swing.JFrame {
         jLabel1.setText("Ainda não tem uma conta?");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, 170, 20));
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/padaria/imagens/VIEW_LOGIN_ofc.png"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/padaria/imagens/viewLogin_images.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
